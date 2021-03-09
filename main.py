@@ -2,6 +2,7 @@ import math
 from math import sqrt
 import calculator
 from calculator import multiply
+import if_statements
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import data_types
@@ -36,3 +37,5 @@ if __name__ == '__main__':
     print(multiply(1, 2))
 
     data_types.showDataTypes()
+
+    if_statements.showIfStatements()
