@@ -6,6 +6,7 @@ import if_statements
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import data_types
+import iteration
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -39,3 +40,5 @@ if __name__ == '__main__':
     data_types.showDataTypes()
 
     if_statements.showIfStatements()
+
+    iteration.show();
