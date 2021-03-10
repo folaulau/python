@@ -11,6 +11,7 @@ from user import User
 from manager import Manager
 from manager import CTO
 import json
+import user_input
 
 def print_user(man):
     print(man.__dict__)
@@ -87,4 +88,7 @@ if __name__ == '__main__':
 
     print_user(man)
     print_user(cto)
+
+    # user input
+    user_input.show()
 
