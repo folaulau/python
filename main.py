@@ -8,6 +8,13 @@ import if_statements
 import data_types
 import iteration
 from user import User
+from manager import Manager
+from manager import CTO
+import json
+
+def print_user(man):
+    print(man.__dict__)
+    print(man.is_active())
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -70,4 +77,14 @@ if __name__ == '__main__':
     # static method
     print(User.get_user_role())
 
+    # OOP - inheritance, encapsulation
+    man = Manager("Laulau",23, False)
+
+    #print json string
+    print(man.__dict__)
+
+    cto = CTO("Laulau",23, False)
+
+    print_user(man)
+    print_user(cto)
 
