@@ -3,7 +3,7 @@
 def show():
     writeToFile()
     readFromFile()
-
+    print("\n")
 
 def writeToFile():
     """

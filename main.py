@@ -13,6 +13,7 @@ from manager import CTO
 import json
 import user_input
 import files
+import exceptions
 
 def print_user(man):
     print(man.__dict__)
@@ -95,4 +96,7 @@ if __name__ == '__main__':
 
     # file (read/wite)
     files.show()
+
+    #exception handling
+    exceptions.show()
 
