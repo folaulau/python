@@ -7,6 +7,7 @@ import if_statements
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import data_types
 import iteration
+from user import User
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -57,5 +58,16 @@ if __name__ == '__main__':
     print(f'{new_numbers}') #[2, 4, 6]
 
 
+    #class
+    kinga = User("Kinga", 8)
+    print(kinga.get_name())
+    del kinga.name
+    print(f'name: {kinga.get_name()}')
+
+    # class method
+    print(User.get_admin_role())
+
+    # static method
+    print(User.get_user_role())
 
 
