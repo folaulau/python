@@ -15,6 +15,7 @@ import user_input
 import files
 import exceptions
 import json
+import pickle
 
 def print_user(man):
     print(man.__dict__)
@@ -106,5 +107,7 @@ if __name__ == '__main__':
     jjohn = json.dumps(john, indent = 2, sort_keys=True)
     print(jjohn)
 
-
-
+    grades = {'Alice': 89, 'Bob': 72, 'Charles': 87}
+    serial_grades = pickle.dumps(grades)
+    received_grades = pickle.loads(serial_grades)
+    print(received_grades)
