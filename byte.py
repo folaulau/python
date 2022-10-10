@@ -4,6 +4,7 @@ data = b'GeeksForGeeks'
 print('\nInput:')
 print(data)
 print(type(data))
+print("data: {}".format(str(data)))
  
 # converting
 output = data.decode()
