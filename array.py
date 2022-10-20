@@ -10,3 +10,7 @@ c = array[6 : ]
 print("array[6 : ]: {}".format(c))
 d = array[ : 5]
 print("array[ : 5]: {}".format(d))
+
+
+e = array[0 : 15]
+print("array[0 : 15]: {}".format(e))
