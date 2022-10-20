@@ -1,13 +1,13 @@
 
 
-def highlight_spotlight_finding(finding: str):
+def highlight_spotlight_finding(finding: str, start_pos: int):
 
     print("finding text: {}".format(finding))
 
     open_tick = -1
     
     try:
-        open_tick = finding.index("`")
+        open_tick = finding.find("`", start_pos)
     except:
         pass
     
@@ -19,7 +19,7 @@ def highlight_spotlight_finding(finding: str):
     close_tick = -1
 
     try:
-        close_tick = finding.index("`", open_tick + 1)
+        close_tick = finding.find("`", open_tick + 1)
     except:
         pass
 
@@ -46,12 +46,12 @@ def highlight_spotlight_finding(finding: str):
     print("\n\n")
 
     if len(end_text) > 0:
-        return highlight_spotlight_finding(new_text)
+        return highlight_spotlight_finding(new_text, close_tick)
     else:
         return new_text
 
 text = "`I love you`, but I m`cant stand you`. Yeah yea yea, I cant x`hold it anymore`b. what you `think?"
 
-highlighted_text = highlight_spotlight_finding(text)
+highlighted_text = highlight_spotlight_finding(text,0)
 
 print("\nhighlighted_text: {}".format(highlighted_text))
