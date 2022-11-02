@@ -1,5 +1,8 @@
 
 
+from ipaddress import ip_address
+
+
 def highlight_spotlight_finding(finding: str, start_pos: int):
 
     print("finding text: {}".format(finding))
@@ -55,3 +58,42 @@ text = "`I love you`, but I m`cant stand you`. Yeah yea yea, I cant x`hold it an
 highlighted_text = highlight_spotlight_finding(text,0)
 
 print("\nhighlighted_text: {}".format(highlighted_text))
+
+
+
+"""
+split
+"""
+
+ip_address = '116.88.201.253, 165.225.112.156, 10.40.0.38'
+ip_addresses = ip_address.split(", ")
+ip_addr = ip_addresses[0]
+print("ip_addr:{}".format(ip_addr))
+
+ip_address = '116.88.201.253'
+ip_addresses = ip_address.split(", ")
+ip_addr = ip_addresses[0]
+print("ip_addr1:{}".format(ip_addr))
+
+ip_address = ''
+ip_addresses = ip_address.split(", ")
+ip_addr = ip_addresses[0]
+print("ip_addr2:{}".format(ip_addr))
+
+
+"""
+convert string to bytes
+"""
+
+# initializing string 
+test_string = "GFG is best"
+  
+# printing original string 
+print("The original string : " + str(test_string))
+  
+# Using bytes(str, enc)
+# convert string to byte 
+res = bytes(test_string, 'utf-8')
+  
+# print result
+print("The byte converted string is  : " + str(res) + ", type : " + str(type(res)))
