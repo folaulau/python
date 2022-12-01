@@ -14,3 +14,18 @@ print("array[ : 5]: {}".format(d))
 
 e = array[0 : 15]
 print("array[0 : 15]: {}".format(e))
+
+
+# append
+
+list_a = [1,2,3]
+
+print("list_a:{}".format(list_a))
+
+list_a.append(23)
+
+print("list_a:{}".format(list_a))
+
+list_a.append([45,6,7,9])
+
+print("list_a:{}".format(list_a))
