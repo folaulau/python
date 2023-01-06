@@ -109,4 +109,60 @@ print("The byte converted string is  : " + str(res) + ", type : " + str(type(res
 name = "Folau"
 age = 36
 height = 103.3456
-print("name=%s, age=%s, height=%.2f" %(name, age, height))
+str_formatted = "name=%s, age=%s, height=%.2f" %(name, age, height)
+print(str_formatted)
+
+# string repeat sequence
+# Python also supports multiplying strings to form a string with a repeating sequence
+lotsofhellos = "hello" * 10
+print(lotsofhellos)
+
+#using double quotes makes it easy to include apostrophes
+mystring = "Don't worry about apostrophes"
+print(mystring)
+
+# Assignments can be done on more than one variable "simultaneously" on the same line like this
+a, b = "a", 4
+print(a, b)
+
+
+
+
+one = 1
+two = 2
+hello = "hello"
+
+# This will not work!
+try:
+    print(one + two + hello)
+except Exception as ex:
+    print(ex)
+# must convert one and two to str, like str(one)
+print(str(one) + str(two) + hello)
+
+# get character from string
+hello = "hello"
+#If you just have one number in the brackets, it will give you the single character at that index
+print(hello[0])
+print(hello.index("e"))
+
+#If you leave out the first number but keep the colon, it will give you a slice from the start to the number you left in
+print("hello[:3]=%s" % hello[:3])
+#If you leave out the second number, it will give you a slice from the first number to the end
+print("hello[3:]=%s" % hello[3:])
+
+# substring
+print(hello[2:4])
+
+astring = "Hello world!"
+print("astring=%s"%astring)
+print("astring[3:7]=%s" % astring[3:7])
+# [start:stop:step]
+print("astring[3:7:2]=%s" % astring[3:7:2])
+# reverse string
+print(astring[::-1])
+
+# string split
+astring = "Hello world!"
+afewwords = astring.split(" ")
+print("afewwords=%s"%afewwords)

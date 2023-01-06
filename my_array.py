@@ -29,3 +29,17 @@ print("list_a:{}".format(list_a))
 list_a.append([45,6,7,9])
 
 print("list_a:{}".format(list_a))
+
+list_a = list_a + [45,6,7,9]
+
+print("list_a:{}".format(list_a))
+
+# using + operator to join lists
+even_numbers = [2,4,6,8]
+odd_numbers = [1,3,5,7]
+all_numbers = odd_numbers + even_numbers
+print("all_numbers=%s" % all_numbers)
+
+# Just as in strings, Python supports forming new lists with a repeating sequence using the multiplication operator
+my_list = [1,2,3] * 5
+print("my_list=%s" % my_list)
