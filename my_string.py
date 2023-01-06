@@ -97,3 +97,16 @@ res = bytes(test_string, 'utf-8')
   
 # print result
 print("The byte converted string is  : " + str(res) + ", type : " + str(type(res)))
+
+
+# string format
+# Any object which is not a string can be formatted using the %s operator as well.
+# %s - String (or any object with a string representation, like numbers)
+# %d - Integers
+# %f - Floating point numbers
+# %.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.
+# %x/%X - Integers in hex representation (lowercase/uppercase)
+name = "Folau"
+age = 36
+height = 103.3456
+print("name=%s, age=%s, height=%.2f" %(name, age, height))

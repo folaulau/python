@@ -11,3 +11,5 @@ print(dict1)
 dict1.update(dict3)
 
 print(dict1)
+
+print(dict1['name'])
