@@ -17,3 +17,9 @@ print("generator")
 
 for attr in teacher:
     print("attr:{}".format(attr))
+
+
+# yield value can only be used or iterated on once.
+# teacher is empty as this point
+for attr in teacher:
+    print("attrs:{}".format(attr))
