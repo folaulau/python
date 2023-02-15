@@ -23,3 +23,14 @@ def showIfStatements():
         print("")
     else:
         print("less than 5")
+
+showIfStatements()
+
+if None:
+    print("it's none")
+
+if False:
+    print("it's false")
+
+if True:
+    print("it's true")
