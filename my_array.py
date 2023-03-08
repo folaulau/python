@@ -43,3 +43,29 @@ print("all_numbers=%s" % all_numbers)
 # Just as in strings, Python supports forming new lists with a repeating sequence using the multiplication operator
 my_list = [1,2,3] * 5
 print("my_list=%s" % my_list)
+
+# list comprehension
+# syntax -> newlist = [expression for item in iterable if condition == True]
+sentence = "the quick brown fox jumps over the lazy dog, over"
+words = sentence.split()
+modified_words = [word for word in words if word not in ["the","over"]]
+print("words:", words)
+print("modified_words:", modified_words)
+
+# The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome:
+modified_words = [word if word != "lazy" else "tonga" for word in words if word not in ["the","over"]]
+print("words:", words)
+print("modified_words:", modified_words)
+
+# remove elements from list during iteration
+
+my_names = ["lau","lau1","lau2","lau3","lau4"]
+
+print("my_names:", my_names)
+
+for name in my_names:
+    print("name:{}".format(name))
+    if name in ["lau1","lau3"]:
+        my_names.remove(name)
+
+print("my_names:", my_names)

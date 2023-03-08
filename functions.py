@@ -35,3 +35,10 @@ mult = lambda num1, num2 : num1 * num2
 
 
 
+### optional parameters ####
+
+def handle_log(name: str, option: str = None):
+    print("name={}, option={}".format(name,option))
+
+
+handle_log("Folau")
