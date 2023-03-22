@@ -12,4 +12,6 @@ dict1.update(dict3)
 
 print(dict1)
 
-print(dict1['name'])
+# print(dict1['name'])
+
+print("dict3.keys type={}, dict3.keys={}".format(type(dict3.keys()),  dict3.keys()))
