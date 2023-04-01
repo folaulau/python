@@ -1,4 +1,4 @@
-
+import json
 
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print("array: {}".format(array))
@@ -69,3 +69,29 @@ for name in my_names:
         my_names.remove(name)
 
 print("my_names:", my_names)
+
+
+###
+
+dicts = [1,2,3]
+
+num_threads = 1
+data_size = len(dicts)
+
+# use one thread unless data_size is more than 20
+if data_size > 4:
+    num_threads = 4
+
+chunk_size = int(len(dicts) / num_threads)
+chunks = [dicts[i:i + chunk_size] for i in range(0, len(dicts), chunk_size)]
+
+print("chunk_size:{}".format(chunk_size))
+
+for i in range(len(chunks)):
+    chunk_data = chunks[i]
+    print("i:{}, chunk_data:{}".format(i, chunk_data))
+
+
+blob = json.dumps([]).encode()
+
+print("blob:{}".format(blob))

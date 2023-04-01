@@ -33,3 +33,29 @@ def generate_insight_avl_event_id(event_time,rule_id):
 avl_escalated_event_id = generate_insight_avl_event_id(datetime.now(),'AVL_R2684')
 
 print("type: {}, id={}", type(avl_escalated_event_id).__name__, avl_escalated_event_id)
+
+
+print("\n\ndatetime comparison")
+
+# Define two datetime objects
+date_time_1 = datetime(2023, 3, 24, 10, 30, 0)
+date_time_2 = datetime(2023, 3, 25, 10, 30, 0)
+
+
+# Check if date_time_1 is before date_time_2
+if date_time_1 < date_time_2:
+    print("date_time_1 is before date_time_2")
+elif date_time_1 > date_time_2:
+    print("date_time_1 is after date_time_2")
+else:
+    print("date_time_1 is equal date_time_2")
+
+date_time_3 = datetime(2023, 3, 25, 10, 30, 0)
+
+# Check if date_time_2 is before date_time_3
+if date_time_2 < date_time_3:
+    print("date_time_2 is before date_time_3")
+elif date_time_2 > date_time_3:
+    print("date_time_2 is before date_time_3")
+else:
+    print("date_time_2 is equal date_time_3")
